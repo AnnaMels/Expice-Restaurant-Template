@@ -125,7 +125,7 @@ body {
 
 .hero__location-icon {
     position: absolute;
-    top: 62.5%;
+    top: 37%;
     left: 5%;
 }
 
@@ -147,7 +147,7 @@ body {
 .hero__plate-of-food {
     position: absolute;
     left: 6%;
-    top: 70%;
+    top: 43%;
     z-index: 1;
 
     display: block;
@@ -158,7 +158,7 @@ body {
 
 .hero__salad-image {
     position: absolute;
-    top: 55%;
+    top: 35%;
     left: 50%;
 
     display: block;
@@ -349,7 +349,7 @@ body {
 .booking-form__search-restaurant-input {
     margin: 0px 0px 70px 155px;
     padding-left: 11px;
-    width: 273px;
+    min-width: 20px;
     height: 51px;
 
     border: none;
@@ -385,7 +385,7 @@ body {
 .booking-form__input-date-wrapper {
     display: flex;
     justify-content: center;
-    margin-left: 161px;
+    margin-left: 140px;
 }
 
 .booking-form__date-input {
@@ -400,7 +400,7 @@ body {
 }
 
 .booking-form-wrapper {
-    min-width: 458px;
+    /* min-width: 458px; */
     margin-right: 96px;
     height: 333px;
 
@@ -430,6 +430,8 @@ body {
 }
 
 .booking-form__date {
+    z-index: 1;
+
     display: flex;
     flex-direction: column;
     margin-right: 20px;
@@ -665,9 +667,10 @@ body {
     display: none;
 }
 
-.services__hyphenation {
+/* .services__hyphenation {
     display: none;
-}
+} */
+
 
 .services__list-background {
     display: none;
@@ -783,7 +786,6 @@ body {
 .app__button {
     position: relative;
 
-    margin-bottom: 46px;
     padding-left: 50px;
 
     width: 178px;
@@ -815,40 +817,145 @@ body {
     left: 15px;
 }
 
-.app__mobile-border {
-    position: absolute;
-    top: -6%;
-}
-
-.app__mobile-screen {
-    position: absolute;
-    top: 0;
-    left: 28%;
-}
-
-.app__img-wrapper {
-    position: relative;
-    margin-left: 130px;
-
-    width: 317px;
-    height: 555px;
-}
-
-.app__mobile-rectangle {
-    position: absolute;
-    left: 47%;
-    top: -1%;
-    z-index: 1;
-}
-
-.app__leaf {
-    position: absolute;
-    left: -40%;
-}
 
 .app__background {
     position: absolute;
     left: -40%;
+}
+
+.app__mobile-img {
+    display: block;
+    width: 100%;
+}
+
+.app__tablet-img {
+    display: none;
+}
+
+.footer-section {
+    position: relative;
+}
+
+.footer-section__title {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin: 60px 0 33px 0;
+
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 32px;
+
+    color: #2E266F;
+}
+
+.footer-section__paragraph {
+    display: flex;
+    text-align: center;
+    margin: 33px 64px 30px 70px;
+
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 24px;
+
+    color: #707070;
+}
+
+.footer-section__input {
+    margin: 0 82px 30px 90px;
+    width: 90%;
+    height: 60px;
+    padding-left: 33px;
+
+    font-size: 16px;
+    line-height: 24px;
+
+    color: #2E266F;
+    opacity: 0.6;
+    background-color: #fff;
+    box-shadow: 2px 2px 30px 2px #FFF5EC;
+    border-radius: 100px;
+    border: none;
+}
+
+.footer-section__input-wrapper {
+    position: relative;
+
+    width: 66%;
+}
+
+.footer-section__button {
+    position: absolute;
+    top: 10%;
+    left: 110%;
+
+    width: 40px;
+    height: 40px;
+
+    background-color: #FE043C;
+    border-radius: 100px;
+    border: none;
+}
+
+.footer-section__list {
+    display: flex;
+    justify-content: center;
+    margin: 0 61px 0 64px;
+    padding-left: 0;
+
+    color: #707070;
+
+    list-style-type: none;
+}
+
+.footer-section__item {
+    margin-right: 20px;
+}
+
+.footer-section__item:last-child {
+    margin-right: 0;
+}
+
+.footer-section__socials {
+    display: flex;
+    padding-left: 0;
+    margin-left: 110px;
+
+    list-style-type: none;
+}
+
+.footer-section__social-item {
+    margin-right: 16px;
+}
+
+.footer-section__social-item:last-child {
+    margin-right: 42px;
+}
+
+.footer-section__footer-wrapper {
+    display: flex;
+    justify-content: center;
+}
+
+.footer-section__copyright-icon {
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+.footer-section__copyright-text {
+    margin: 16px 111px 0 10px;
+}
+
+.footer-section__image {
+    position: absolute;
+    top: -17%;
+}
+
+.footer-section__background {
+    position: absolute;
+
+    width: 100%;
+    height: 420px;
 }
 
 @media screen and (min-width: 1195px) {
@@ -1145,7 +1252,7 @@ body {
 
     .services__title {
         margin-top: 117px;
-        margin-left: 30px;
+        margin-left: 50px;
 
         font-weight: 500;
         font-size: 48px;
@@ -1187,6 +1294,7 @@ body {
     .services__list {
         width: 55%;
         margin-bottom: 0;
+        margin-left: 32px;
     }
 
     .services__moto-icon {
@@ -1267,41 +1375,55 @@ body {
         margin-left: 86px;
     }
 
-    .app__img-wrapper {
-        margin-top: 100px;
-        margin-left: 100px;
-    }
+   .app__tablet-img {
+        display: block;
+        width: 100%;
+   }
 
-    .app__mobile-screen {
-        left: 43%;
-        top: 4%;
-
-        width: 319px;
-        height: 688px;
-    }
-
-    .app__mobile-rectangle {
-        top: 18px;
-        left: 80%;
-    }
-
-    .app__leaf {
-        top: 50%;
-        left: -30%;
-
-        width: 522.91px;
-        height: 530.63px;
-    }
-
-    .app__mobile-border {
-        /* height: 100%;    */
-        width: 159%;
-
-/* height: 688px; */
-    }
+   .app__mobile-img {
+       display: none;
+   }
 
     .app__buttons {
         margin-bottom: 418px;
+    }
+
+    .footer-section__background {
+        width: 50%;
+    }
+
+    .footer-section__title {
+        font-size: 36px;
+        line-height: 48px;
+    }
+
+    .footer-section__paragraph {
+        margin: 33px auto 30px auto;
+        width: 533px;
+        justify-content: center;
+    }
+
+    .footer-section__input-wrapper {
+        margin-left: auto;
+        margin-right: auto;
+        width: 50%;
+    }
+
+    .footer-section__input {
+        margin: 0 0 30px 0;
+        height: 90px;
+    }
+
+    .footer-section__button {
+        left: 80%;
+        top: 12%;
+
+        width: 56px;
+        height: 56px;
+    }
+
+    .footer-section__footer-wrapper {
+        justify-content: end;
     }
 }
 
@@ -1315,6 +1437,10 @@ body {
     .page-header__logo {
         font-size: 72px;
         line-height: 108px;
+    }
+
+    .hero__search-button {
+        top: 4%;
     }
 
     .hero__title {
@@ -1331,7 +1457,7 @@ body {
 
 
     .hero__location-icon {
-        top: 115%;
+        top: 68.5%;
         left: 2%;
     }
 

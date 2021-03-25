@@ -1,3 +1,7 @@
+* {
+    box-sizing: border-box;
+}
+
 body {
     margin: 0;
 
@@ -56,7 +60,7 @@ body {
 
     font-weight: 900;
     font-size: 100px;
-    line-height: 150px;
+    line-height: 100%;
     text-transform: capitalize;
 
     color: #2E266F;
@@ -68,15 +72,14 @@ body {
 
     font-weight: 700;
     font-size: 36px;
-    line-height: 48px;
+    line-height: 1.3;
 
     color: #2E266F;
 }
 
 .hero__search-restaurant-input {
-    width: 90%;
-    height: 90px;
-    margin-bottom: 50px;
+    width: 100%;
+    height: 100%;
     padding-left: 50px;
 
     font-size: 18px;
@@ -89,14 +92,16 @@ body {
 
 .hero__search-button {
     position: absolute;
-    top: 6%;
-    right: 12%;
+    top: 50%;
+    right: 1.5%;
 
     display: flex;
     align-items: center;
     justify-content: center;
     width: 146px;
     height: 72px;
+
+    transform: translateY(-50%);
 
     font-weight: 600;
     font-size: 30px;
@@ -105,13 +110,18 @@ body {
     color:  #FFFFFF;
     background: #FE043C;
     border-radius: 60px 0px 0px 0px;
+    border: none;
 }
 
 .hero__input-wrapper {
     position: relative;
+
+    margin-bottom: 50px;
+    width: 100%;
+    height: 90px;
 }
 
-.hero__location-input {
+/* .hero__location-input {
     position: absolute;
     left: 0;
 
@@ -121,66 +131,112 @@ body {
     background: #FE043C;
     border-radius: 0px 100px 100px 0px;
     color: #FFFFFF;
-}
+} */
 
 .hero__location-icon {
     position: absolute;
-    top: 37%;
-    left: 5%;
+    top: 25%;
+    left: 15%;
+}
+
+.hero__location-text {
+    position: absolute;
+    top: -14%;
+
+    height: 35px;
 }
 
 .hero__location-input-wrapper {
+    position: relative;
+    left: -4%;
+
     height: 70px;
+    width: 280px;
     margin-bottom: 20px;
+    padding-left: 90px;
+
+    font-weight: 500;
+    font-size: 30px;
+    line-height: 3;
+
+    color: #FFFFFF;
+    background: #FE043C;
+    border-radius: 0px 100px 100px 0px;
 }
 
 .hero__dotted-background {
+    position: absolute;
+}
+
+.hero__dotted-background-1 {
+    position: absolute;
+    bottom: 0;
+}
+
+.hero__background-wrapper {
     position: relative;
 
-    display: block;
-    margin-bottom: 15px;
-    width: 60%;
+    width: 100%;
+    height: 450px;
+}
 
-    background-size: cover;
+.hero__food-img {
+    position: relative;
+    top: -95%;
+
+    max-width: 700px;
+    height: 100%;
 }
 
 .hero__plate-of-food {
     position: absolute;
-    left: 6%;
-    top: 43%;
+    left: 0;
+    top: 0;
     z-index: 1;
 
+    max-width: 100%;
+    margin: auto;
+    height: auto;
     display: block;
-    width: 90%;
 
     background-size: cover;  
 }
 
 .hero__salad-image {
     position: absolute;
-    top: 35%;
-    left: 50%;
+    top: -20%;
+    left: 45%;
 
+    max-width: 50%;
+    margin: auto;
+    height: auto;
     display: block;
-    width: 50%;
 
     background-size: cover;
 }
 
 .hero__left-carousel {
     position: absolute;
-    left: 80%;
+    right: 15%;
     bottom: 0;
+
+    cursor: pointer;
 }
 
 .hero__right-carousel {
     position: absolute;
-    left: 93%;
+    right: 5%;
     bottom: 0;
+
+    cursor: pointer;
 }
 
 .hero__dotted-background-wrapper {
     position: relative;
+
+    margin-left: 19px;
+    width: 100%;
+    height: 502px;
 }
 
 
@@ -293,6 +349,7 @@ body {
     background-color: #FFFFFF;
     border-radius: 100px 0px 0px 100px;
     color: #FE043C;
+    border: none;
 
     cursor: pointer;
 }
@@ -347,10 +404,10 @@ body {
 }
 
 .booking-form__search-restaurant-input {
-    margin: 0px 0px 70px 155px;
+    margin: 0px 20px 0px 155px;
     padding-left: 11px;
-    min-width: 20px;
-    height: 51px;
+    width: 100%;
+    height: 100%;
 
     border: none;
     box-shadow: 2px 2px 30px 2px #FFF5EC;
@@ -359,14 +416,17 @@ body {
 .booking-form__input-wrapper {
     position: relative;
 
+    margin-bottom: 70px;
+    width: 100%;
+    height: 51px;
     display: flex;
     justify-content: center;
 }
 
 .booking-form__button {
     position: absolute;
-    top: 5%;
-    left: 75%;
+    top: 10%;
+    right: 5%;
 
     display: flex;
     align-items: center;
@@ -380,6 +440,7 @@ body {
 
     color:  #FFFFFF;
     background: #FE043C;
+    border: none;
 }
 
 .booking-form__input-date-wrapper {
@@ -862,9 +923,8 @@ body {
 }
 
 .footer-section__input {
-    margin: 0 82px 30px 90px;
-    width: 90%;
-    height: 60px;
+    width: 100%;
+    height: 100%;
     padding-left: 33px;
 
     font-size: 16px;
@@ -882,13 +942,14 @@ body {
     position: relative;
 
     width: 66%;
+    height: 60px;
+    margin-left: 90px;
 }
 
 .footer-section__button {
     position: absolute;
-    top: 10%;
-    left: 110%;
-
+    top: 15%;
+    right: 2%;
     width: 40px;
     height: 40px;
 
@@ -990,19 +1051,19 @@ body {
     }
 
     .hero__plate-of-food {
-        left: 55%;
-        top: 15%;
+        /* left: 55%; */
+        top: 73%;
 
-        width: 45%;
+        width: 100%;
 
         background-size: cover;
     }
 
     .hero__salad-image {
-        top: 0%;
-        left: 65%;
+        top: 45%;
+        left: 25%;
 
-        width: 20%;
+        width: 100%;
 
         background-size: cover;
     }
@@ -1026,9 +1087,6 @@ body {
         line-height: 70px;
     }
 
-    .hero__search-restaurant-input {
-        margin: 0px 0px 99px 30px;
-    }
 
     .hero__dotted-background-wrapper {
         position: absolute;
@@ -1040,10 +1098,23 @@ body {
         background-size: cover;
     }
 
+    .hero__background-wrapper {
+        height: 0;
+    }
+
+    .hero__dotted-background {
+        margin-top: 15px;
+    }
+
+    .hero__input-wrapper {
+        width: 70%;
+        margin-left: 32px;
+    }
+
     .hero__location-icon {
         position: absolute;
-        top: 87.5%;
-        left: 2%;
+        top: 25%;
+        /* left: 2%; */
     }
 
     .hero__carousel-wrapper {
@@ -1353,7 +1424,7 @@ body {
     .app {
         display: flex;
 
-        padding-top: 0;
+        padding-top: 01195;
     }
 
     .app__title {
@@ -1406,17 +1477,19 @@ body {
     .footer-section__input-wrapper {
         margin-left: auto;
         margin-right: auto;
+        margin-bottom: 30px;
         width: 50%;
-    }
-
-    .footer-section__input {
-        margin: 0 0 30px 0;
         height: 90px;
     }
 
+    .footer-section__input {
+        height: 100%;
+        width: 100%;
+    }
+
     .footer-section__button {
-        left: 80%;
-        top: 12%;
+        right: 3%;
+        top: 20%;
 
         width: 56px;
         height: 56px;
@@ -1439,10 +1512,6 @@ body {
         line-height: 108px;
     }
 
-    .hero__search-button {
-        top: 4%;
-    }
-
     .hero__title {
         font-size: 200px;
         line-height: 300px;  
@@ -1455,10 +1524,21 @@ body {
         line-height: 90px;
     }
 
-
     .hero__location-icon {
-        top: 68.5%;
-        left: 2%;
+        top: 25%;
+        left: 10%;
+    }
+
+
+    .hero__location-input-wrapper {
+        left: -17%;
+
+        margin-top: 179px;
+    }
+
+
+    .hero__input-wrapper {
+        margin-bottom: 0;
     }
 
     .page-header__menu {
@@ -1500,9 +1580,7 @@ body {
         margin: 73px 0px 0px 5px;
     }
 
-    .hero__search-restaurant-input {
-        margin-bottom: 179px;
-    }
+
 
     .wrapper {
         padding-bottom: 10%;
@@ -1554,6 +1632,17 @@ body {
         display: block;
     }
 
+    .booking-form__input-wrapper {
+        width: 60%;
+        height: 91px;
+        margin: 0 auto 60px auto;
+    }
+
+    .booking-form__button {
+        top: 15%;
+        right: 3%;
+    }
+
     .booking-form-wrapper {
         margin-right: 415px;
         height: 560px;
@@ -1565,6 +1654,11 @@ body {
 
     .booking-form__dotes {
         right: 17%;
+    }
+
+    .booking-form__search-restaurant-input {
+        width: 100%;
+        height: 100%;
     }
 
     .booking-form__vertical-dotes {

@@ -164,14 +164,14 @@ body {
     border-radius: 0px 100px 100px 0px;
 }
 
-.hero__dotted-background {
+/* .hero__dotted-background {
     position: absolute;
 }
 
 .hero__dotted-background-1 {
     position: absolute;
     bottom: 0;
-}
+} */
 
 .hero__background-wrapper {
     position: relative;
@@ -180,7 +180,7 @@ body {
     height: 450px;
 }
 
-.hero__food-img {
+/* .hero__food-img {
     position: relative;
     top: -95%;
 
@@ -200,8 +200,8 @@ body {
     display: block;
 
     background-size: cover;  
-}
-
+} */
+/* 
 .hero__salad-image {
     position: absolute;
     top: -20%;
@@ -213,20 +213,51 @@ body {
     display: block;
 
     background-size: cover;
+} */
+
+.hero__food-img {
+    position: relative;
+
+    width: 56vw;
+    height: 81vw;
+}
+
+.hero__dotted-background {
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+    object-position: left top;
+}
+
+.hero__plate {
+    position: absolute;
+
+    top: 0%;
+    left: 0%;
+
+    width: 162%;
+}
+
+.hero__salad {
+    position: absolute;
+
+    width: 102%;
+
+    left: 65%;
+    bottom: 22%;
 }
 
 .hero__left-carousel {
     position: absolute;
-    right: 15%;
-    bottom: 0;
+    right: 14%;
 
     cursor: pointer;
 }
 
 .hero__right-carousel {
     position: absolute;
-    right: 5%;
-    bottom: 0;
+    right: 2%;
 
     cursor: pointer;
 }
@@ -241,7 +272,7 @@ body {
 
 
 .top-restaurant-section__headline, .title {
-    margin: 78px 0px 30px 0px;
+    margin: 60px 0px 30px 0px;
     padding-left: 21px;
 
     font-size: 36px;
@@ -611,8 +642,11 @@ body {
 .services__list-item-title {
     position: relative;
 
-    min-width: 209px;
-    margin: 0px 0px 20px 45px;
+
+    display: flex;
+    justify-content: center;
+    /* min-width: 209px; */
+    margin: 0px 0px 20px 40px;
 
     font-weight: 500;
     font-size: 24px;
@@ -623,26 +657,28 @@ body {
 
 .services__arrow {
     position: absolute;
-    top: 26%;
-    left: -17%;
-
-
-   
-    display: block;
+    top: 40%;
+    right: -15%;
 }
 
 .to-left {
     min-width: 30%;
 }
 
+.services__title-wrapper {
+    position: relative;
+}
+
 .services__arrow-end {
     position: absolute;
-    top: 35%;
-    left: 65%;
+    bottom: 15%;
+    right: 0;
 
     min-width: 30%;
     display: block;
 }
+
+
 
 .services__list-item-wrapper {
     position: relative;
@@ -653,7 +689,8 @@ body {
 }
 
 .services__list-item-paragraph {
-    margin: 0px 0px 0px 45px;
+    margin: 0px 0px 0px 40px;
+
 
     font-size: 14px;
     line-height: 24px;
@@ -674,7 +711,8 @@ body {
     position: relative;
 
     display: block;
-    width: 53%;
+    width: 50%;
+    height: 50%;
 }
 
 .second-title,
@@ -683,7 +721,6 @@ body {
 }
 
 .second-title {
-    width: 160px;
     margin-right: auto;
 }
 
@@ -691,13 +728,6 @@ body {
     margin-right: 42px;
 }
 
-.services__around-the-clock {
-    z-index: 1;
-
-    display: flex;
-    justify-content: right;
-    margin-right: 45px;
-}
 
 .second-end-arrow {
     width: 84px;
@@ -707,10 +737,10 @@ body {
 
 .right-arrow {
     z-index: 1;
-    left: 80%;
-    top: 35%;
+    left: -15%;
+    top: 50%;
 
-    width: 30%;
+    min-width: 30%;
 }
 
 .services__list-item:first-child {
@@ -844,13 +874,17 @@ body {
     color: #707070;
 }
 
+.app-store {
+    margin-right: 15px;
+}
+
 .app__button {
     position: relative;
 
     padding-left: 50px;
 
     width: 178px;
-    height: 49px;
+    min-height: 49px;
 
     font-size: 12px;
 
@@ -864,6 +898,11 @@ body {
 
 .google-play-btn {
     margin: 0 20px 0 50px;
+}
+
+.app__buttons {
+    display: flex;
+    flex-wrap: nowrap;
 }
 
 .app__button-text {
@@ -961,6 +1000,7 @@ body {
 .footer-section__list {
     display: flex;
     justify-content: center;
+    flex-wrap: wrap;
     margin: 0 61px 0 64px;
     padding-left: 0;
 
@@ -1050,22 +1090,14 @@ body {
         display: flex;
     }
 
-    .hero__plate-of-food {
-        /* left: 55%; */
-        top: 73%;
-
-        width: 100%;
-
-        background-size: cover;
+    .hero__food-img {
+        width: 25vw;
+        height: 35vw;
     }
 
-    .hero__salad-image {
-        top: 45%;
-        left: 25%;
-
-        width: 100%;
-
-        background-size: cover;
+    .hero__salad {
+        left: 55%;
+        bottom: 20%;
     }
 
 

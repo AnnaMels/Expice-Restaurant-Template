@@ -22,11 +22,11 @@ body {
 
 .page-header__logo {
     margin-top: 0;
-    margin-bottom: 0;
+    margin-bottom: 20px;
 
     font-weight: 700;
     font-size: 48px;
-    line-height: 72px;
+    line-height: 1.5;
 
     color: #FE043C;
 }
@@ -83,7 +83,7 @@ body {
     padding-left: 50px;
 
     font-size: 18px;
-    line-height: 90px;
+    line-height: 5;
 
     border: none; 
     color: #2E266F;
@@ -105,7 +105,7 @@ body {
 
     font-weight: 600;
     font-size: 30px;
-    line-height: 90px;
+    line-height: 3;
 
     color:  #FFFFFF;
     background: #FE043C;
@@ -121,17 +121,6 @@ body {
     height: 90px;
 }
 
-/* .hero__location-input {
-    position: absolute;
-    left: 0;
-
-    width: 280px;
-    height: 65px;
-
-    background: #FE043C;
-    border-radius: 0px 100px 100px 0px;
-    color: #FFFFFF;
-} */
 
 .hero__location-icon {
     position: absolute;
@@ -164,15 +153,6 @@ body {
     border-radius: 0px 100px 100px 0px;
 }
 
-/* .hero__dotted-background {
-    position: absolute;
-}
-
-.hero__dotted-background-1 {
-    position: absolute;
-    bottom: 0;
-} */
-
 .hero__background-wrapper {
     position: relative;
 
@@ -180,40 +160,6 @@ body {
     height: 450px;
 }
 
-/* .hero__food-img {
-    position: relative;
-    top: -95%;
-
-    max-width: 700px;
-    height: 100%;
-}
-
-.hero__plate-of-food {
-    position: absolute;
-    left: 0;
-    top: 0;
-    z-index: 1;
-
-    max-width: 100%;
-    margin: auto;
-    height: auto;
-    display: block;
-
-    background-size: cover;  
-} */
-/* 
-.hero__salad-image {
-    position: absolute;
-    top: -20%;
-    left: 45%;
-
-    max-width: 50%;
-    margin: auto;
-    height: auto;
-    display: block;
-
-    background-size: cover;
-} */
 
 .hero__food-img {
     position: relative;
@@ -277,7 +223,7 @@ body {
 
     font-size: 36px;
     font-weight: 500;
-    line-height: 47px;
+    line-height: 1.3;
 
     color: #2E266F;
     border-left: 12px solid #FE043C;
@@ -288,7 +234,7 @@ body {
 
     font-size: 14px;
     font-weight: 400;
-    line-height: 24px;
+    line-height: 1.7;
 
     color: #707070;
 }
@@ -343,7 +289,7 @@ body {
     margin: 20px 0px 25px 30px;
 
     font-size: 24px;
-    line-height: 24px;
+    line-height: 1;
     font-weight: 700;
 
     color: white;
@@ -353,7 +299,7 @@ body {
     margin: 0px 175px 0px 30px;
 
     font-size: 14px;
-    line-height: 24px;
+    line-height: 1.7;
     font-weight: 400;
 
     color: white;
@@ -363,7 +309,7 @@ body {
     margin: 0px 0px 19px 30px;
 
     font-size: 14px;
-    line-height: 24px;
+    line-height: 1.7;
 
     color: white;
 }
@@ -375,7 +321,7 @@ body {
     height: 44.75px;
 
     font-size: 16px;
-    line-height: 24px;
+    line-height: 1.5;
 
     background-color: #FFFFFF;
     border-radius: 100px 0px 0px 100px;
@@ -421,7 +367,7 @@ body {
     margin-left: 155px;
 
     font-size: 24px;
-    line-height: 24px;
+    line-height: 1;
     font-weight: 500;
 
     color: #2E266F;
@@ -467,7 +413,7 @@ body {
 
     font-weight: 600;
     font-size: 24px;
-    line-height: 90px;
+    line-height: 3.75;
 
     color:  #FFFFFF;
     background: #FE043C;
@@ -484,7 +430,7 @@ body {
     width: 95px;
 
     font-size: 16px;
-    line-height: 30px;
+    line-height: 1.8;
 
     color: #2E266F;
     opacity: 0.6;
@@ -492,7 +438,6 @@ body {
 }
 
 .booking-form-wrapper {
-    /* min-width: 458px; */
     margin-right: 96px;
     height: 333px;
 
@@ -503,7 +448,7 @@ body {
     width: 70px;
 
     font-size: 16px;
-    line-height: 30px;
+    line-height: 1.8;
 
     color: #2E266F;
     opacity: 0.6;
@@ -514,7 +459,7 @@ body {
     width: 65px;
 
     font-size: 16px;
-    line-height: 30px;
+    line-height: 1.8;
 
     color: #2E266F;
     opacity: 0.6;
@@ -534,7 +479,7 @@ body {
     position: relative;
 
     font-size: 16px;
-    line-height: 30px;
+    line-height: 1.8;
 
     color: #2E266F;
 }
@@ -627,7 +572,7 @@ body {
     margin: 0px 20px 28px 52px;
 
     font-size: 14px;
-    line-height: 24px;
+    line-height: 1.7;
 
     color: #707070;
 }
@@ -642,15 +587,13 @@ body {
 .services__list-item-title {
     position: relative;
 
-
     display: flex;
     justify-content: center;
-    /* min-width: 209px; */
     margin: 0px 0px 20px 40px;
 
     font-weight: 500;
     font-size: 24px;
-    line-height: 32px;
+    line-height: 1.3;
 
     color: #2E266F;
 }
@@ -693,7 +636,7 @@ body {
 
 
     font-size: 14px;
-    line-height: 24px;
+    line-height: 1.7;
 
     color: #707070;
 }
@@ -758,10 +701,6 @@ body {
     display: none;
 }
 
-/* .services__hyphenation {
-    display: none;
-} */
-
 
 .services__list-background {
     display: none;
@@ -774,7 +713,7 @@ body {
 
     font-weight: 500;
     font-size: 36px;
-    line-height: 62px;
+    line-height: 1.7;
 
     color: #2E266F;
 }
@@ -783,7 +722,7 @@ body {
     margin: 0 20px 30px 20px;
 
     font-size: 14px;
-    line-height: 24px;
+    line-height: 1.7;
 
     color: #707070;
 }
@@ -819,7 +758,7 @@ body {
 
     font-weight: 500;
     font-size: 24px;
-    line-height: 32px;
+    line-height: 1.3;
 
     color: #2E266F;
 }
@@ -830,7 +769,7 @@ body {
     width: 289px;
 
     font-size: 14px;
-    line-height: 24px;
+    line-height: 1.7;
 
     color: #707070;
 }
@@ -845,7 +784,7 @@ body {
 
     font-weight: bold;
     font-size: 24px;
-    line-height: 32px;
+    line-height: 1.3;
 
     color: #FE043C;
 }
@@ -869,7 +808,7 @@ body {
     margin: 0 55px 30px 50px;
 
     font-size: 14px;
-    line-height: 24px;
+    line-height: 1.7;
 
     color: #707070;
 }
@@ -908,7 +847,7 @@ body {
 .app__button-text {
     font-weight: 500;
     font-size: 14px;
-    line-height: 24px;
+    line-height: 1.7;
 }
 
 .app__icon {
@@ -944,7 +883,7 @@ body {
 
     font-weight: normal;
     font-size: 24px;
-    line-height: 32px;
+    line-height: 1.3;
 
     color: #2E266F;
 }
@@ -956,7 +895,7 @@ body {
 
     font-weight: normal;
     font-size: 14px;
-    line-height: 24px;
+    line-height: 1.7;
 
     color: #707070;
 }
@@ -967,7 +906,7 @@ body {
     padding-left: 33px;
 
     font-size: 16px;
-    line-height: 24px;
+    line-height: 1.5;
 
     color: #2E266F;
     opacity: 0.6;
@@ -983,6 +922,7 @@ body {
     width: 66%;
     height: 60px;
     margin-left: 90px;
+    margin-bottom: 30px;
 }
 
 .footer-section__button {
@@ -1056,7 +996,7 @@ body {
     position: absolute;
 
     width: 100%;
-    height: 420px;
+    height: auto;
 }
 
 @media screen and (min-width: 1195px) {
@@ -1064,7 +1004,7 @@ body {
         margin: 20px 0px 0px 30px;
 
         font-size: 60px;
-        line-height: 90px;
+        line-height: 1.5;
     }
 
     .wrapper {
@@ -1105,7 +1045,7 @@ body {
         margin: 0px 0px 0px 30px;
 
         font-size: 150px;
-        line-height: 225px;
+        line-height: 1.5;
     }
 
     .hero__sub-title {
@@ -1116,7 +1056,7 @@ body {
 
 
         font-size: 60px;
-        line-height: 70px;
+        line-height: 1.1;
     }
 
 
@@ -1146,7 +1086,6 @@ body {
     .hero__location-icon {
         position: absolute;
         top: 25%;
-        /* left: 2%; */
     }
 
     .hero__carousel-wrapper {
@@ -1167,13 +1106,12 @@ body {
     }
 
     .hero__left-carousel {
-        left: 65%;
-        bottom: -20%;
+        right: 10%;
+        top: 50%;
     }
     
     .hero__right-carousel {
-        left: 85%;
-        bottom: -20%;
+        top: 50%;
     }
 
     .top-restaurant-section__text-wrapper,
@@ -1201,7 +1139,7 @@ body {
         height: 130px;
 
         font-size: 48px;
-        line-height: 62px;
+        line-height: 1.2;
         font-weight: 500;
 
         border-left: 25px solid #FE043C;
@@ -1304,7 +1242,7 @@ body {
 
         font-weight: 500;
         font-size: 36px;
-        line-height: 24px;
+        line-height: 0.6;
     }
 
     .booking-form__input-wrapper {
@@ -1319,7 +1257,7 @@ body {
         height: 100%;
 
         font-size: 16px;
-        line-height: 24px;
+        line-height: 1.5;
 
         color: #2E266F;
         opacity: 0.6;
@@ -1364,7 +1302,7 @@ body {
 
         font-weight: 500;
         font-size: 48px;
-        line-height: 62px;
+        line-height: 1.2;
     }
 
     .services__text-wrapper {
@@ -1383,7 +1321,7 @@ body {
         width: 609px;
 
         font-size: 14px;
-        line-height: 24px;
+        line-height: 1.7;
 
         color: #707070;
     }
@@ -1546,24 +1484,34 @@ body {
 
     .page-header__logo {
         font-size: 72px;
-        line-height: 108px;
+        line-height: 1.5;
     }
 
     .hero__title {
         font-size: 200px;
-        line-height: 300px;  
+        line-height: 1.5;  
     }
 
     .hero__sub-title {
         margin-bottom: 40px;
 
         font-size: 72px;
-        line-height: 90px;
+        line-height: 1.25;
     }
 
     .hero__location-icon {
         top: 25%;
         left: 10%;
+    }
+
+
+    .hero__left-carousel {
+        right: 10%;
+        top: 60%;
+    }
+    
+    .hero__right-carousel {
+        top: 60%;
     }
 
 
@@ -1774,6 +1722,4 @@ body {
     .google-play-btn {
         margin-left: 182px;
     }
-    
-
 }

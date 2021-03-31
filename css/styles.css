@@ -938,6 +938,12 @@ body {
     margin-bottom: 30px;
 }
 
+.footer-section__button-img {
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+}
+
 .footer-section__button {
     position: absolute;
     top: 15%;

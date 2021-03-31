@@ -892,6 +892,15 @@ body {
     color: #2E266F;
 }
 
+.footer-section__link {
+    z-index: 1;
+
+    color: #707070;
+    text-decoration: none;
+
+    cursor: pointer;
+}
+
 .footer-section__paragraph {
     display: flex;
     text-align: center;
@@ -1519,12 +1528,13 @@ body {
 
 
     .hero__left-carousel {
-        right: 10%;
-        top: 60%;
+        right: 30%;
+        bottom: 20%;
     }
     
     .hero__right-carousel {
-        top: 60%;
+       right: 0;
+       bottom: 20%;
     }
 
 

@@ -16,10 +16,10 @@
             <div class="page-header__wrapper">
                 <p class="page-header__logo">expice</p>
                 <ul class="page-header__menu">
-                    <li class="page-header__menu-item">Menu One</li>
-                    <li class="page-header__menu-item">Menu Two</li>
-                    <li class="page-header__menu-item">Menu Three</li>
-                    <li class="page-header__menu-item">Menu Four</li>
+                    <li class="page-header__menu-item"><a class="page-header__menu-item-link" href="">Menu One</a></li>
+                    <li class="page-header__menu-item"><a class="page-header__menu-item-link" href="">Menu Two</a></li>
+                    <li class="page-header__menu-item"><a class="page-header__menu-item-link" href="">Menu Three</a></li>
+                    <li class="page-header__menu-item"><a class="page-header__menu-item-link" href="">Menu Four</a></li>
                 </ul>
                 <img class="page-header__menu-image" src="./images/menu-icon.svg" alt="" width="22" height="25">
                 <img class="page-header__menu-image-tablet" src="./images/menu-icon-tablet.svg" alt="">
@@ -31,10 +31,10 @@
             <div>
                 <h1 class="hero__title">Food</h1>
                 <h2 class="hero__sub-title">Discover Restaurant <br> & Delicious Food</h2>
-                <div class="hero__input-wrapper">
+                <form class="hero__input-wrapper">
                     <input class="hero__search-restaurant-input" type="text" placeholder="Search Restaurant, Food">
                     <button class="hero__search-button">GO</button>
-                </div>
+                </form>
                 <div class="hero__location-input-wrapper">
                     <img class="hero__location-icon" src="./images/location_icon.svg" alt="Location icon">
                     <span class="hero__location-text">Rajshahi</span>
@@ -53,8 +53,8 @@
                 <img class="hero__salad-image" src="./images/salad-image.png" alt="Salad"> -->
             </div>
             <div class="hero__carousels">
-                <img class="hero__left-carousel" src="./images/left-carousel.png" alt="left carousel">
-                <img class="hero__right-carousel" src="./images/right-carousel.png" alt="Right carousel">
+                <img class="hero__left-carousel" src="./images/left-carousel.svg" alt="left carousel">
+                <img class="hero__right-carousel" src="./images/right-carousel.svg" alt="Right carousel">
             </div>
             <!-- </div> -->
 
@@ -115,11 +115,11 @@
                 <img class="booking-form__border" src="./images/red-border.png" alt="">
             </div>
             <h3 class="booking-form__title">advance booking</h3>
-            <div class="booking-form__input-wrapper">
+            <form class="booking-form__input-wrapper">
                 <input class="booking-form__search-restaurant-input" type="text" name="" id=""
                     placeholder="search restrurent">
                 <button class="booking-form__button">GO</button>
-            </div>
+            </form>
             <div class="booking-form__input-date-wrapper">
                 <div class="booking-form__date">
                     <label class="booking-form__label" for="date">Date</label>
@@ -253,12 +253,16 @@
         <h3 class="app__title title">Download App For Exciting Deals</h3>
         <p class="app__paragraph">Lorem Ipsum Dolor Sit Amet, Consectetur Adipiscing Elit. Est, Adipiscing Cursus Auctor Eget Sed Phasellus Senectus. Ut Tellus Donec Vestibulum Tristique Leo Bibendum In A, Tincidunt. </p>
     <div class="app__buttons">
+        <a href="">
         <button class="app__button google-play-btn">GET IT ON <br> <span class="app__button-text">Google Play</span> 
         <img class="app__icon" src="./images/google-play-icon.png" alt="">
         </button>
+    </a>
+        <a href="">
         <button class="app__button app-store">Download On The <br> <span class="app__button-text">App Store</span>
         <img class="app__icon" src="./images/apple-icon.png" alt="">
         </button>
+    </a>
     </div>
     </div>
     <img class="app__tablet-img" src="./images/tablet-app.png" alt="">
@@ -271,12 +275,12 @@
         <img class="footer-section__desktop-image" src="./images/desktop-leaf.png" alt="">
         <h3 class="footer-section__title">Get Notified <br> About New Amazing Products</h3>
         <p class="footer-section__paragraph">Lorem Ipsum Dolor Sit Amet, Consectetur Adipiscing Elit. Est, Adipiscing Cursus Auctor Aget Sed Phasellus Senectus. </p>
-    <div class="footer-section__input-wrapper">
+    <form class="footer-section__input-wrapper">
         <input class="footer-section__input" type="text" name="" id="" placeholder="E-mail">
         <button class="footer-section__button">
             <img class="footer-section__button-img" src="./images/arrow.png" alt="">
         </button>
-    </div>
+    </form>
         <ul class="footer-section__list">
             <li class="footer-section__item"><a class="footer-section__link" href="">Product</a></li>
             <li class="footer-section__item"><a class="footer-section__link" href="">Company</a></li>

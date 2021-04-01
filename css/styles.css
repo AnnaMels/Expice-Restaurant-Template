@@ -58,6 +58,11 @@ body {
     display: none;
 }
 
+.page-header__menu-item-link {
+    text-decoration: none;
+    color: #2E266F;
+}
+
 .page-header__wrapper {
     display: flex;
 }
@@ -1163,7 +1168,6 @@ body {
         position: absolute;
 
         width: 66px;
-        height: 45px;
 
         cursor: pointer;
     }

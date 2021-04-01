@@ -608,8 +608,12 @@ body {
 }
 
 .to-left {
+    top: 60%;
+    left: -20%;
+
     min-width: 30%;
 }
+
 
 .services__title-wrapper {
     position: relative;
@@ -620,11 +624,9 @@ body {
     bottom: 15%;
     right: 0;
 
-    min-width: 30%;
-    display: block;
+    /* min-width: 30%;
+    display: block; */
 }
-
-
 
 .services__list-item-wrapper {
     position: relative;
@@ -654,7 +656,7 @@ body {
 }
 
 .services__img-wrapper {
-    position: relative;
+    /* position: relative; */
 
     display: block;
     width: 50%;
@@ -668,6 +670,7 @@ body {
 
 .second-title {
     margin-right: auto;
+    text-align: end;
 }
 
 .second-paragraph {
@@ -676,17 +679,13 @@ body {
 
 
 .second-end-arrow {
-    width: 84px;
     left: 0;
-    top: 40%;
+    top: 75%;
 }
 
 .right-arrow {
-    z-index: 1;
-    left: -15%;
-    top: 50%;
-
-    min-width: 30%;
+    right: -20%;
+    top: 60%;
 }
 
 .services__list-item:first-child {
@@ -939,7 +938,7 @@ body {
 }
 
 .footer-section__button-img {
-    display: flex;
+    display: block;
     margin-left: auto;
     margin-right: auto;
 }
@@ -954,9 +953,18 @@ body {
     background-color: #FE043C;
     border-radius: 100px;
     border: none;
+
+    cursor: pointer;
+}
+
+.footer-section__tablet-image {
+    display: none;
 }
 
 .footer-section__list {
+    position: relative;
+    z-index: 1;
+
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
@@ -993,6 +1001,9 @@ body {
 }
 
 .footer-section__footer-wrapper {
+    position: relative;
+    z-index: 1;
+
     display: flex;
     justify-content: center;
 }
@@ -1016,6 +1027,10 @@ body {
 
     width: 100%;
     height: auto;
+}
+
+.footer-section__desktop-image {
+    display: none;
 }
 
 @media screen and (min-width: 1195px) {
@@ -1501,6 +1516,16 @@ body {
     .footer-section__footer-wrapper {
         justify-content: end;
     }
+
+    .footer-section__tablet-image {
+        position: absolute;
+
+        display: block;
+    }
+
+    .footer-section__desktop-image {
+        display: none;
+    }
 }
 
 
@@ -1750,5 +1775,21 @@ body {
 
     .google-play-btn {
         margin-left: 182px;
+    }
+
+    .footer-section__desktop-image {
+        position: absolute;
+        top: 0;
+
+        display: block;
+    }
+
+    .footer-section__image {
+        display: none;
+    }
+
+    .footer-section {
+        padding-top: 272px;
+
     }
 }

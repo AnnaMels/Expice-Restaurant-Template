@@ -9,6 +9,24 @@ body {
     background-color: #FFF5EC;
 }
 
+@media screen and (max-width: 553px) {
+    .left-end {
+      display: none;
+    }
+
+    .to-left {
+        max-width: 10%;
+    }
+
+    .second-end-arrow {
+        display: none;
+    }
+
+    .right-arrow {
+        max-width: 30%;
+    }
+}
+
 .wrapper {
     padding-bottom: 40px;
     background: linear-gradient(to right, #FFF5EC 75%, #FE043C 25%);   
@@ -583,7 +601,7 @@ body {
 .services__list {
     position: relative;
     z-index: 1;
-    
+
     margin: 0px 21px 30px 20px;
     padding-left: 0;
 
@@ -672,7 +690,7 @@ body {
 }
 
 .second-title {
-    margin-right: auto;
+    margin-right: 80px;
     text-align: end;
 }
 

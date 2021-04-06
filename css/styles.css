@@ -9,6 +9,7 @@ body {
     background-color: #FFF5EC;
 }
 
+
 @media screen and (max-width: 553px) {
     .left-end {
       display: none;
@@ -1057,6 +1058,21 @@ body {
 
 .footer-section__desktop-image {
     display: none;
+}
+
+@media screen and (max-width: 445px) {
+    .app__buttons {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .google-play-btn {
+        margin-bottom: 20px;
+    }
+
+    .app-store {
+        margin-left: 50px;
+    }
 }
 
 @media screen and (min-width: 1195px) {

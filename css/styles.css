@@ -10,23 +10,7 @@ body {
 }
 
 
-@media screen and (max-width: 553px) {
-    .left-end {
-      display: none;
-    }
 
-    .to-left {
-        max-width: 10%;
-    }
-
-    .second-end-arrow {
-        display: none;
-    }
-
-    .right-arrow {
-        max-width: 30%;
-    }
-}
 
 .wrapper {
     padding-bottom: 40px;
@@ -1060,6 +1044,43 @@ body {
     display: none;
 }
 
+@media screen and (max-width: 553px) {
+    .left-end {
+      display: none;
+    }
+
+    .to-left {
+        max-width: 10%;
+    }
+
+    .second-end-arrow {
+        display: none;
+    }
+
+    .right-arrow {
+        max-width: 30%;
+    }
+
+    .booking-form-wrapper {
+        height: 100%;
+    }
+
+    .booking-form__input-date-wrapper {
+        flex-wrap: wrap;
+    }
+
+    .booking-form__search-restaurant-input {
+        z-index: 1;
+        
+        margin-left: 50px;
+    }
+
+    .booking-form__button {
+        z-index: 1
+        ;
+    }
+}
+
 @media screen and (max-width: 445px) {
     .app__buttons {
         flex-wrap: wrap;
@@ -1077,22 +1098,6 @@ body {
     .hero__search-restaurant-input::placeholder {
         opacity: 0;
     }
-
-    /* .top-restaurant-section__list-item {
-        height: 100%;
-    }
-
-    .top-restaurant-section__restaurant-img {
-        width: 100%;
-    }
-
-    .top-restaurant-section__list-item {
-        height: 493px;
-    }
-
-    .top-restaurant-section__label {
-        bottom: 7%;
-    } */
 }
 
 @media screen and (min-width: 1195px) {

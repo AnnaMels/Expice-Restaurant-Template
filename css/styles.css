@@ -161,10 +161,10 @@ body {
 
 .hero__location-input-wrapper {
     position: relative;
-    left: -4%;
+    left: -7%;
 
     height: 70px;
-    width: 280px;
+    width: 70%;
     margin-bottom: 20px;
     padding-left: 90px;
 
@@ -1073,6 +1073,26 @@ body {
     .app-store {
         margin-left: 50px;
     }
+
+    .hero__search-restaurant-input::placeholder {
+        opacity: 0;
+    }
+
+    /* .top-restaurant-section__list-item {
+        height: 100%;
+    }
+
+    .top-restaurant-section__restaurant-img {
+        width: 100%;
+    }
+
+    .top-restaurant-section__list-item {
+        height: 493px;
+    }
+
+    .top-restaurant-section__label {
+        bottom: 7%;
+    } */
 }
 
 @media screen and (min-width: 1195px) {

@@ -119,6 +119,7 @@ body {
     background: #FE043C;
     border-radius: 60px 0px 0px 0px;
     border: none;
+    outline: none;
 }
 
 .hero__input-wrapper {
@@ -145,10 +146,10 @@ body {
 
 .hero__location-input-wrapper {
     position: relative;
-    left: -7%;
+    left: -4%;
 
     height: 70px;
-    width: 70%;
+    width: 300px;
     margin-bottom: 20px;
     padding-left: 90px;
 
@@ -632,7 +633,7 @@ body {
 
 .services__arrow-end {
     position: absolute;
-    bottom: 15%;
+    bottom: 18%;
     right: 0;
 
     /* min-width: 30%;
@@ -691,7 +692,7 @@ body {
 
 .second-end-arrow {
     left: 0;
-    top: 75%;
+    top: 72%;
 }
 
 .right-arrow {
@@ -944,7 +945,8 @@ body {
 
     width: 66%;
     height: 60px;
-    margin-left: 90px;
+    margin-left: auto;
+    margin-right: auto;
     margin-bottom: 30px;
 }
 
@@ -1044,6 +1046,34 @@ body {
     display: none;
 }
 
+.footer-section__title,
+.footer-section__paragraph {
+    position: relative;
+    z-index: 1;
+}
+
+.top-restaurant-section__see-more-btn {
+    position: relative;
+
+    margin-bottom: auto;
+}
+
+.top-restaurant-section__see-more-image {
+    margin: 51px auto 21px auto;
+
+    cursor: pointer;
+}
+
+.top-restaurant-section__see-more-text {
+    margin-left: 46%;
+
+    font-size: 14px;
+    line-height: 1.7;
+
+    text-decoration: none;
+    color: #FE043C;
+}
+
 @media screen and (max-width: 553px) {
     .left-end {
       display: none;
@@ -1071,14 +1101,14 @@ body {
 
     .booking-form__search-restaurant-input {
         z-index: 1;
-        
+
         margin-left: 50px;
     }
 
     .booking-form__button {
-        z-index: 1
-        ;
+        z-index: 1;
     }
+
 }
 
 @media screen and (max-width: 445px) {
@@ -1219,7 +1249,7 @@ body {
     }
     
     .hero__right-carousel {
-       right: 20%;
+       right: 10%;
        bottom: 10%;
     }
 
@@ -1268,6 +1298,23 @@ body {
         margin: 0px 17px 0px 0px;
     }
 
+    .top-restaurant-section__see-more-btn {
+        position: relative;
+
+        margin-top: 187px;
+        margin-bottom: auto;
+    }
+
+    .top-restaurant-section__see-more-text {
+        margin-left: 90px;
+
+        font-size: 14px;
+        line-height: 1.7;
+
+        text-decoration: none;
+        color: #FE043C;
+    }
+
     .top-restaurant-section__restaurant-img {
         display: block;
         width: 100%;
@@ -1281,7 +1328,7 @@ body {
     }
 
     .top-restaurant-section__see-more-image {
-        margin: auto 49px auto 49px;
+        margin: auto 49px 21px 49px;
     }
 
     .top-restaurant-section__dotes-img {
